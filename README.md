@@ -80,4 +80,4 @@ ORDER BY company_code ASC
 
 
 ## ✅ Output
-![New Companies Solution](SQL/NewCompaniesSolution.png)
+![New Companies Solution](NewCompaniesSolution.png)
