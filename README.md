@@ -68,7 +68,13 @@ The input tables are:
 
 ## 💡 Solution 
 
-<pre> ```sql SELECT Company.company_code, Company.founder, COUNT(DISTINCT Employee.lead_manager_code) AS total_number_of_lead_managers, COUNT(DISTINCT Employee.senior_manager_code) AS total_number_of_senior_managers, COUNT(DISTINCT Employee.manager_code) AS total_number_of_managers, COUNT(DISTINCT Employee.employee_code) AS total_number_of_employees FROM Company INNER JOIN Employee ON Company.company_code = Employee.company_code GROUP BY Company.company_code, Company.founder ORDER BY company_code ASC; ``` </pre>
+<pre> ```sql 
+  SELECT Company.company_code, Company.founder, COUNT(DISTINCT Employee.lead_manager_code) AS total_number_of_lead_managers, 
+  COUNT(DISTINCT Employee.senior_manager_code) AS total_number_of_senior_managers, COUNT(DISTINCT Employee.manager_code) AS total_number_of_managers, 
+  COUNT(DISTINCT Employee.employee_code) AS total_number_of_employees FROM Company 
+  INNER JOIN Employee ON Company.company_code = Employee.company_code GROUP BY Company.company_code, Company.founder 
+  ORDER BY company_code ASC;
+``` </pre>
 
 ## ✅ Output
 ![New Companies Solution](NewCompaniesSolution.png)
