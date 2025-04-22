@@ -78,3 +78,6 @@ ORDER BY company_code ASC
 
 ## ✅ Output
 ![New Companies Solution](NewCompaniesSolution.png)
+
+<span style="color:red">There's room to improve sentiment among a quarter of the audience.</span>
+
